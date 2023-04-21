@@ -62,7 +62,7 @@ jobs:
           if [[ $ARCH =~ "snapshot" ]]; then
               BRANCH="$ARCH"
           fi
-          cd bin/*/action
+          cd bin/packages/*/action
           sudo chown runner:runner -R .
           git init
           git config user.name "bot"
