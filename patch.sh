@@ -9,6 +9,6 @@ function sed_wrapper() {
     fi
 }
 
-sed_wrapper '/golang-package.mk/ c\include ../golang/golang-package.mk' mosdns/Makefile
-sed_wrapper '/golang-package.mk/ c\include ../golang/golang-package.mk' clash-for-openclash/Makefile
-sed_wrapper '/golang-package.mk/ c\include ../golang/golang-package.mk' clash-meta-for-openclash/Makefile
+sed_wrapper '/golang-package.mk/ c\include ../golang/golang-package.mk' packages/mosdns/Makefile
+sed_wrapper '/golang-package.mk/ c\include ../golang/golang-package.mk' packages/clash-for-openclash/Makefile
+sed_wrapper '/golang-package.mk/ c\include ../golang/golang-package.mk' packages/clash-meta-for-openclash/Makefile
