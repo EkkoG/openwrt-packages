@@ -5,6 +5,7 @@ on:
     paths:
       - '.github/workflows/build-packages-release-21.02.yml'
       - 'patch.sh'
+      - 'do_not_build'
       - 'packages/**'
       - '!packages/**/github/workflows/**'
       - '!packages/**/README*'
