@@ -21,8 +21,7 @@ jobs:
           token: ${{ secrets.PUSH_TOKEN }}
 
       - name: Fetch feeds
-        run: |
-          curl -sL https://github.com/EkkoG/openwrt-dist/raw/master/scripts/feed_build.sh | bash 
+        uses: ekkog/feed-builder@main
 
       - name: Commit
         run: |

@@ -5,12 +5,12 @@ on:
     paths:
       - '.github/workflows/build-packages-release-21.02.yml'
       - 'patch.sh'
-      - '**'
-      - '!config.json'
-      - '!**/README*'
-      - '!**/.gitignore'
-      - '!**/LICENSE'
-      - '!**/LICENSES'
+      - 'packages/**'
+      - '!packages/**/github/workflows/**'
+      - '!packages/**/README*'
+      - '!packages/**/.gitignore'
+      - '!packages/**/LICENSE'
+      - '!packages/**/LICENSES'
 
 jobs:
   buildpkg:
@@ -59,6 +59,13 @@ jobs:
       - name: Prepare feeds
         run: |
           ./patch.sh ${{ matrix.arch }}
+          PACKAGES=$(ls packages | sed 's/\///g')
+          for package in $(cat do_not_build); do
+              PACKAGES=$(echo "$PACKAGES" | sed "s/$package//g")
+          done
+
+          PACKAGES=$(echo "$PACKAGES" | tr '\n' ' ')
+          echo "PACKAGES=${PACKAGES}" >> $GITHUB_ENV
 
       - name: Build
         uses: ekkog/gh-action-sdk@master
@@ -68,14 +75,7 @@ jobs:
           INDEX: 1
           IGNORE_ERRORS: 1
           V: sc
-          PACKAGES: |
-            clash-for-openclash
-            clash-meta-for-openclash
-            mosdns
-            natmap
-            sdm
-            v2dat
-            v2ray-geodata
+          PACKAGES: ${{ env.PACKAGES }}
 
       - name: List files
         run: |
@@ -97,6 +97,6 @@ jobs:
           git config user.email "bot@github.com"
           git add .
           git commit -m "$(TZ='Asia/Shanghai' date +@%Y%m%d)"
-          git push --force --quiet "https://x-access-token:${{ secrets.DIST_PUSH_TOKEN }}@github.com/EkkoG/openwrt-dist" HEAD:$BRANCH
+          git push --force --quiet "https://x-access-token:${{ secrets.PUSH_TOKEN }}@github.com/$GITHUB_REPOSITORY" HEAD:$BRANCH
 
 
