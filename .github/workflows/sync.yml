@@ -22,7 +22,7 @@ jobs:
 
       - name: Fetch feeds
         run: |
-          curl -sL https://github.com/EkkoG/openwrt-dist/raw/master/scripts/feed_build.sh | sh 
+          curl -sL https://github.com/EkkoG/openwrt-dist/raw/master/scripts/feed_build.sh | bash 
 
       - name: Commit
         run: |
