@@ -6,7 +6,6 @@ on:
       - '.github/workflows/build-packages-release-22.03.yml'
       - 'patch.sh'
       - '**'
-      - '!**/github/workflows/**'
       - '!**/README*'
       - '!**/.gitignore'
       - '!**/LICENSE'
