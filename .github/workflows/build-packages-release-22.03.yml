@@ -19,7 +19,37 @@ jobs:
     strategy:
       matrix:
         arch:
+          - aarch64_cortex-a53-v22.03.4
+          - aarch64_cortex-a72-v22.03.4
+          - aarch64_generic-v22.03.4
           - arc_archs-v22.03.4
+          - arm_arm1176jzf-s_vfp-v22.03.4
+          - arm_arm926ej-s-v22.03.4
+          - arm_cortex-a15_neon-vfpv4-v22.03.4
+          - arm_cortex-a5_vfpv4-v22.03.4
+          - arm_cortex-a7-v22.03.4
+          - arm_cortex-a7_neon-vfpv4-v22.03.4
+          - arm_cortex-a7_vfpv4-v22.03.4
+          - arm_cortex-a8_vfpv3-v22.03.4
+          - arm_cortex-a9-v22.03.4
+          - arm_cortex-a9_neon-v22.03.4
+          - arm_cortex-a9_vfpv3-d16-v22.03.4
+          - arm_fa526-v22.03.4
+          - arm_mpcore-v22.03.4
+          - arm_xscale-v22.03.4
+          - i386_pentium-mmx-v22.03.4
+          - i386_pentium4-v22.03.4
+          - mips64_octeonplus-v22.03.4
+          - mips_24kc-v22.03.4
+          - mips_4kec-v22.03.4
+          - mips_mips32-v22.03.4
+          - mipsel_24kc-v22.03.4
+          - mipsel_24kc_24kf-v22.03.4
+          - mipsel_74kc-v22.03.4
+          - mipsel_mips32-v22.03.4
+          - powerpc_464fp-v22.03.4
+          - powerpc_8540-v22.03.4
+          - x86_64-v22.03.4
 
     steps:
       - uses: actions/checkout@v3
