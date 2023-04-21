@@ -1,0 +1,101 @@
+name: Openwrt Packages Build Bot for 21.02
+on:
+  push:
+    branches: master
+    paths:
+      - '.github/workflows/build-packages-release-21.02.yml'
+      - 'patch.sh'
+      - '**'
+      - '!**/github/workflows/**'
+      - '!**/README*'
+      - '!**/.gitignore'
+      - '!**/LICENSE'
+      - '!**/LICENSES'
+
+jobs:
+  buildpkg:
+    name: Build Openwrt Package
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        arch:
+          - aarch64_cortex-a53-v21.02.5
+          - aarch64_cortex-a72-v21.02.5
+          - aarch64_generic-v21.02.5
+          - arc_arc700-v21.02.5
+          - arc_archs-v21.02.5
+          - arm_arm1176jzf-s_vfp-v21.02.5
+          - arm_arm926ej-s-v21.02.5
+          - arm_cortex-a15_neon-vfpv4-v21.02.5
+          - arm_cortex-a5_vfpv4-v21.02.5
+          - arm_cortex-a7-v21.02.5
+          - arm_cortex-a7_neon-vfpv4-v21.02.5
+          - arm_cortex-a8_vfpv3-v21.02.5
+          - arm_cortex-a9-v21.02.5
+          - arm_cortex-a9_neon-v21.02.5
+          - arm_cortex-a9_vfpv3-d16-v21.02.5
+          - arm_fa526-v21.02.5
+          - arm_mpcore-v21.02.5
+          - arm_xscale-v21.02.5
+          - i386_pentium-mmx-v21.02.5
+          - i386_pentium4-v21.02.5
+          - mips64_octeonplus-v21.02.5
+          - mips_24kc-v21.02.5
+          - mips_4kec-v21.02.5
+          - mips_mips32-v21.02.5
+          - mipsel_24kc-v21.02.5
+          - mipsel_24kc_24kf-v21.02.5
+          - mipsel_74kc-v21.02.5
+          - mipsel_mips32-v21.02.5
+          - powerpc_464fp-v21.02.5
+          - powerpc_8540-v21.02.5
+          - x86_64-v21.02.5
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Prepare feeds
+        run: |
+          ./patch.sh ${{ matrix.arch }}
+
+      - name: Build
+        uses: ekkog/gh-action-sdk@master
+        env:
+          ARCH: ${{ matrix.arch }}
+          KEY_BUILD: ${{ secrets.KEY_BUILD }}
+          INDEX: 1
+          IGNORE_ERRORS: 1
+          PACKAGES: |
+            clash-for-openclash
+            clash-meta-for-openclash
+            mosdns
+            natmap
+            sdm
+            v2dat
+            v2ray-geodata
+
+      - name: List files
+        run: |
+          ls -R bin/
+
+      - name: Prepare Upload
+        env:
+          ARCH: ${{ matrix.arch }}
+        run: |
+          ARCH=$(echo $ARCH | sed 's/-v/-/g')
+          BRANCH="packages/${ARCH::-2}"
+          if [[ $ARCH =~ "snapshot" ]]; then
+              BRANCH="packages/$ARCH"
+          fi
+          cd bin/packages/*/action
+          sudo chown runner:runner -R .
+          git init
+          git config user.name "bot"
+          git config user.email "bot@github.com"
+          git add .
+          git commit -m "$(TZ='Asia/Shanghai' date +@%Y%m%d)"
+          git push --force --quiet "https://x-access-token:${{ secrets.DIST_PUSH_TOKEN }}@github.com/EkkoG/openwrt-dist" HEAD:$BRANCH
+
+
