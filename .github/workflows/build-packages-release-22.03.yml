@@ -1,7 +1,7 @@
 name: Openwrt Packages Build Bot for 22.03
 on:
   push:
-    branches: master
+    branches: main
     paths:
       - '.github/workflows/build-packages-release-22.03.yml'
       - 'scripts/patch.sh'

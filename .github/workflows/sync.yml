@@ -1,7 +1,7 @@
 name: Upstream Packages Version Check
 on:
   push:
-    branches: master
+    branches: main
     paths:
       - '.github/workflows/sync.yml'
       - 'config.json'
