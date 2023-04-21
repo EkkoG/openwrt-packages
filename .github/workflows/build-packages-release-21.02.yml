@@ -6,6 +6,7 @@ on:
       - '.github/workflows/build-packages-release-21.02.yml'
       - 'patch.sh'
       - '**'
+      - '!config.json'
       - '!**/README*'
       - '!**/.gitignore'
       - '!**/LICENSE'
