@@ -1,9 +1,9 @@
-name: Openwrt Packages Build Bot for 21.02
+name: Openwrt Packages Build Bot for 22.03
 on:
   push:
     branches: main
     paths:
-      - '.github/workflows/build-packages-release-21.02.yml'
+      - '.github/workflows/build-packages-release-22.03.yml'
       - 'patch.sh'
       - 'do_not_build'
       - 'packages/**'
@@ -20,6 +20,37 @@ jobs:
     strategy:
       matrix:
         arch:
+          - aarch64_cortex-a53-v22.03.4
+          - aarch64_cortex-a72-v22.03.4
+          - aarch64_generic-v22.03.4
+          - arc_archs-v22.03.4
+          - arm_arm1176jzf-s_vfp-v22.03.4
+          - arm_arm926ej-s-v22.03.4
+          - arm_cortex-a15_neon-vfpv4-v22.03.4
+          - arm_cortex-a5_vfpv4-v22.03.4
+          - arm_cortex-a7-v22.03.4
+          - arm_cortex-a7_neon-vfpv4-v22.03.4
+          - arm_cortex-a7_vfpv4-v22.03.4
+          - arm_cortex-a8_vfpv3-v22.03.4
+          - arm_cortex-a9-v22.03.4
+          - arm_cortex-a9_neon-v22.03.4
+          - arm_cortex-a9_vfpv3-d16-v22.03.4
+          - arm_fa526-v22.03.4
+          - arm_mpcore-v22.03.4
+          - arm_xscale-v22.03.4
+          - i386_pentium-mmx-v22.03.4
+          - i386_pentium4-v22.03.4
+          - mips64_octeonplus-v22.03.4
+          - mips_24kc-v22.03.4
+          - mips_4kec-v22.03.4
+          - mips_mips32-v22.03.4
+          - mipsel_24kc-v22.03.4
+          - mipsel_24kc_24kf-v22.03.4
+          - mipsel_74kc-v22.03.4
+          - mipsel_mips32-v22.03.4
+          - powerpc_464fp-v22.03.4
+          - powerpc_8540-v22.03.4
+          - x86_64-v22.03.4
           - aarch64_cortex-a53-v21.02.5
           - aarch64_cortex-a72-v21.02.5
           - aarch64_generic-v21.02.5
@@ -56,15 +87,16 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-
+          
       - name: Prepare feeds
         run: |
           ./patch.sh ${{ matrix.arch }}
           PACKAGES=$(ls packages | sed 's/\///g')
-          for package in $(cat do_not_build); do
-              PACKAGES=$(echo "$PACKAGES" | sed "s/$package//g")
-          done
-
+          echo "$PACKAGES" > 1.txt
+          sort 1.txt -o 1.txt
+          sort do_not_build -o do_not_build
+          comm -23 1.txt do_not_build > 2.txt
+          PACKAGES=$(cat 2.txt)
           PACKAGES=$(echo "$PACKAGES" | tr '\n' ' ')
           echo "PACKAGES=${PACKAGES}" >> $GITHUB_ENV
 
@@ -75,14 +107,16 @@ jobs:
           KEY_BUILD: ${{ secrets.KEY_BUILD }}
           INDEX: 1
           IGNORE_ERRORS: 1
+          NO_SHFMT_CHECK: 1
           V: sc
           PACKAGES: ${{ env.PACKAGES }}
+
 
       - name: List files
         run: |
           ls -R bin/
 
-      - name: Prepare Upload
+      - name: Upload
         env:
           ARCH: ${{ matrix.arch }}
         run: |
@@ -96,5 +130,3 @@ jobs:
           git add .
           git commit -m "$(TZ='Asia/Shanghai' date +@%Y%m%d)"
           git push --force --quiet "https://x-access-token:${{ secrets.PUSH_TOKEN }}@github.com/$GITHUB_REPOSITORY" HEAD:$BRANCH
-
-
