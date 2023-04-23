@@ -1,1 +1,1 @@
-https://github.com/EkkoG/openwrt-packages
+https://github.com/EkkoG/openwrt-dist
