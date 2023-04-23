@@ -104,6 +104,7 @@ jobs:
         uses: ekkog/gh-action-sdk@master
         env:
           ARCH: ${{ matrix.arch }}
+          CONTAINER: docker.io/openwrt/sdk
           KEY_BUILD: ${{ secrets.KEY_BUILD }}
           INDEX: 1
           IGNORE_ERRORS: 1
