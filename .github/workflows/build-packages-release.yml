@@ -99,6 +99,7 @@ jobs:
           PACKAGES=$(cat 2.txt)
           PACKAGES=$(echo "$PACKAGES" | tr '\n' ' ')
           echo "PACKAGES=${PACKAGES}" >> $GITHUB_ENV
+          find . -name "Makefile" -type f -exec cat {} \;
 
       - name: Build
         uses: ekkog/gh-action-sdk@master
@@ -108,7 +109,7 @@ jobs:
           INDEX: 1
           IGNORE_ERRORS: 1
           NO_SHFMT_CHECK: 1
-          V: sc
+          V: 99
           PACKAGES: ${{ env.PACKAGES }}
 
 
