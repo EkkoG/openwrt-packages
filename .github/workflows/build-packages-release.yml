@@ -110,7 +110,6 @@ jobs:
           - mipsel_74kc-SNAPSHOT
           - mipsel_mips32-SNAPSHOT
           - powerpc_464fp-SNAPSHOT
-          - powerpc_8540-SNAPSHOT
           - powerpc_8548-SNAPSHOT
           - x86_64-SNAPSHOT
 
