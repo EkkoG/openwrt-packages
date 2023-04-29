@@ -1,4 +1,4 @@
-name: Openwrt Build Bot
+name: New version check
 on:
   schedule:
   - cron: 0 16 * * *
@@ -8,7 +8,7 @@ on:
 
 jobs:
   check:
-    name: Check new version of Clash
+    name: Check new version of natmap
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v2
@@ -20,3 +20,4 @@ jobs:
           COMMIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPO: heiher/natmap
           BRANCH: main
+          SOURCE_URL: https://github.com/heiher/natmap/releases/download/{{version}}/natmap-{{version}}.tar.gz
