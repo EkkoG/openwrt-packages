@@ -20,6 +20,7 @@ jobs:
     strategy:
       matrix:
         arch:
+          - x86-64-23.05-SNAPSHOT
           - x86_64-v22.03.4
           - x86_64-v21.02.5
           - x86_64-SNAPSHOT
