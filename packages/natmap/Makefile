@@ -2,7 +2,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=natmap
 PKG_VERSION:=20230519
-PKG_RELEASE:=1
+PKG_RELEASE:=2
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://github.com/heiher/natmap/releases/download/$(PKG_VERSION)
@@ -46,6 +46,7 @@ define Package/natmap/install
 	$(INSTALL_BIN) ./files/tr.sh $(1)/usr/lib/natmap/plugin
 	$(INSTALL_BIN) ./files/emby.sh $(1)/usr/lib/natmap/plugin
 	$(INSTALL_BIN) ./files/cloudflare_origin_rule.sh $(1)/usr/lib/natmap/plugin
+	$(INSTALL_BIN) ./files/cloudflare_redirect_rule.sh $(1)/usr/lib/natmap/plugin
 	$(INSTALL_DIR) $(1)/etc/config/
 	$(INSTALL_CONF) ./files/natmap.config $(1)/etc/config/natmap
 	$(INSTALL_DIR) $(1)/etc/init.d/
