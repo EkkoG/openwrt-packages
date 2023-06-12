@@ -1,0 +1,135 @@
+Package: clash-for-openclash
+Version: 1.16.0-1
+Depends: libc
+Source: /feed/packages/clash-for-openclash
+SourceName: clash-for-openclash
+License: GPL-3.0-only
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1684520301
+Maintainer: EkkoG <beijiu572@gmail.om>
+Architecture: x86_64
+Installed-Size: 3899357
+Filename: clash-for-openclash_1.16.0-1_x86_64.ipk
+Size: 3891674
+SHA256sum: 961074186e29531cf6c91bf579dd0940835de856e8e679c6291e7aec37f4a856
+Description:  Clash, A rule based tunnel in Go, support VMess, Shadowsocks,
+ Trojan, Snell protocol for remote connections.
+
+Package: clash-meta-for-openclash
+Version: 1.14.5-1
+Depends: libc
+Source: /feed/packages/clash-meta-for-openclash
+SourceName: clash-meta-for-openclash
+License: GPL-3.0-only
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1685807797
+Maintainer: EkkoG <beijiu572@gmail.om>
+Architecture: x86_64
+Installed-Size: 9698546
+Filename: clash-meta-for-openclash_1.14.5-1_x86_64.ipk
+Size: 9673677
+SHA256sum: 22c3bea7f648d1ed0da153076f3dc170a7cec4cfdf794a6268756e460f308e4f
+Description:  Clash, A rule based tunnel in Go, support VMess, Shadowsocks,
+ Trojan, Snell protocol for remote connections.
+
+Package: mosdns
+Version: 5.1.3-1
+Depends: libc, ca-bundle
+Provides: mosdns-neo
+Source: /feed/packages/mosdns
+SourceName: mosdns
+License: GPL-3.0
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1682096665
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: x86_64
+Installed-Size: 6414305
+Filename: mosdns_5.1.3-1_x86_64.ipk
+Size: 6399778
+SHA256sum: 26293f40c1db459a5b38afb0f449262ccd93e8c9862584d04f611b670aba6c42
+Description:  A plug-in DNS forwarder/splitter
+
+Package: natmap
+Version: 20230519-2
+Depends: libc, jq, curl
+Source: /feed/packages/natmap
+SourceName: natmap
+License: MIT
+LicenseFiles: License
+Section: net
+SourceDateEpoch: 1686129977
+Maintainer: Richard Yu <yurichard3839@gmail.com>
+Architecture: x86_64
+Installed-Size: 22672
+Filename: natmap_20230519-2_x86_64.ipk
+Size: 23469
+SHA256sum: 6dbc6f678745b13ef380021ca38e9b5c9b89fb9d8b36bb4f3fdd8236982efd9b
+Description:  TCP/UDP port mapping tool for full cone NAT
+
+Package: sdm
+Version: 0.0.1-1
+Depends: libc
+Source: /feed/packages/sdm
+SourceName: sdm
+Section: utils
+SourceDateEpoch: 1682096665
+Architecture: x86_64
+Installed-Size: 842
+Filename: sdm_0.0.1-1_x86_64.ipk
+Size: 1518
+SHA256sum: 232fc39c12f04f73ac0cf308e294e8f1b5f7effa235280567e10053b3647917f
+Description:  A simple daomon manager
+
+Package: v2dat
+Version: 2022-12-15-47b8ee51-1
+Depends: libc
+Source: /feed/packages/v2dat
+SourceName: v2dat
+License: GPL-3.0
+Section: utils
+SourceDateEpoch: 1682096665
+Maintainer: sbwml <admin@cooluc.com>
+Architecture: x86_64
+Installed-Size: 2878976
+Filename: v2dat_2022-12-15-47b8ee51-1_x86_64.ipk
+Size: 2873520
+SHA256sum: f1b8142356dac78f1d61fb47988e1e65676f8c8862383cebd6a77bf063f8fab0
+Description:  V2ray geo/ip data unpack tools
+
+Package: v2ray-geoip
+Version: 202306010100-1
+Depends: libc
+Source: /feed/packages/v2ray-geodata
+SourceName: v2ray-geoip
+License: CC-BY-SA-4.0
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1685621969
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: all
+Installed-Size: 2338664
+Filename: v2ray-geoip_202306010100-1_all.ipk
+Size: 2097336
+SHA256sum: 64d96c1c5d22b557baec87b1497df578023d8f6bb7d3d4c9dd20fbdbdebcd690
+Description:  GeoIP List for V2Ray
+
+Package: v2ray-geosite
+Version: 20230601044045-1
+Depends: libc
+Source: /feed/packages/v2ray-geodata
+SourceName: v2ray-geosite
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1685621969
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: all
+Installed-Size: 458850
+Filename: v2ray-geosite_20230601044045-1_all.ipk
+Size: 458240
+SHA256sum: a8f62e8c8d481f9da1a3f9b696be3a3f841e1f4e3a5298dd144386701e91b09a
+Description:  Geosite List for V2Ray
+
