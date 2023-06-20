@@ -1,0 +1,135 @@
+Package: clash-for-openclash
+Version: 1.16.0-1
+Depends: libc
+Source: /feed/packages/clash-for-openclash
+SourceName: clash-for-openclash
+License: GPL-3.0-only
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1684520301
+Maintainer: EkkoG <beijiu572@gmail.om>
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 3645662
+Filename: clash-for-openclash_1.16.0-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 3640974
+SHA256sum: 2f56e20669ef897b774f64cc65146bcf0792d5bec4ff37608374d1d89c1420bb
+Description:  Clash, A rule based tunnel in Go, support VMess, Shadowsocks,
+ Trojan, Snell protocol for remote connections.
+
+Package: clash-meta-for-openclash
+Version: 1.14.5-1
+Depends: libc
+Source: /feed/packages/clash-meta-for-openclash
+SourceName: clash-meta-for-openclash
+License: GPL-3.0-only
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1685807797
+Maintainer: EkkoG <beijiu572@gmail.om>
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 9160246
+Filename: clash-meta-for-openclash_1.14.5-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 9145257
+SHA256sum: 9c7b8be5a1c7a371dbb7425c46abade5cc2fd270584c428e38096a9f87ff1e00
+Description:  Clash, A rule based tunnel in Go, support VMess, Shadowsocks,
+ Trojan, Snell protocol for remote connections.
+
+Package: mosdns
+Version: 5.1.3-1
+Depends: libc, ca-bundle
+Provides: mosdns-neo
+Source: /feed/packages/mosdns
+SourceName: mosdns
+License: GPL-3.0
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1682096665
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 6045184
+Filename: mosdns_5.1.3-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 6036073
+SHA256sum: 54f97b1e8d7d251c5fa90c63c1332d69fff0bbd76ffab4ece6a89d3654d97b47
+Description:  A plug-in DNS forwarder/splitter
+
+Package: natmap
+Version: 20230519-2
+Depends: libc, jq, curl
+Source: /feed/packages/natmap
+SourceName: natmap
+License: MIT
+LicenseFiles: License
+Section: net
+SourceDateEpoch: 1686129977
+Maintainer: Richard Yu <yurichard3839@gmail.com>
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 19873
+Filename: natmap_20230519-2_arm_cortex-a15_neon-vfpv4.ipk
+Size: 20685
+SHA256sum: 7ecd7d9e2359960486ab0d27aacdcf01b2995cfe7572fd4098e8698e65fea1b6
+Description:  TCP/UDP port mapping tool for full cone NAT
+
+Package: sdm
+Version: 0.0.1-1
+Depends: libc
+Source: /feed/packages/sdm
+SourceName: sdm
+Section: utils
+SourceDateEpoch: 1682096665
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 842
+Filename: sdm_0.0.1-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 1534
+SHA256sum: a7303ab50101b68745d25b02bb949910e33d6f7bb4b5737662b6232d1a79ef1a
+Description:  A simple daomon manager
+
+Package: v2dat
+Version: 2022-12-15-47b8ee51-1
+Depends: libc
+Source: /feed/packages/v2dat
+SourceName: v2dat
+License: GPL-3.0
+Section: utils
+SourceDateEpoch: 1682096665
+Maintainer: sbwml <admin@cooluc.com>
+Architecture: arm_cortex-a15_neon-vfpv4
+Installed-Size: 2697957
+Filename: v2dat_2022-12-15-47b8ee51-1_arm_cortex-a15_neon-vfpv4.ipk
+Size: 2693335
+SHA256sum: b10792ad24f83c49be28b960717e8c04b900b8e32cd59967dd4e9669870a62a5
+Description:  V2ray geo/ip data unpack tools
+
+Package: v2ray-geoip
+Version: 202306150049-1
+Depends: libc
+Source: /feed/packages/v2ray-geodata
+SourceName: v2ray-geoip
+License: CC-BY-SA-4.0
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1687241951
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: all
+Installed-Size: 2299481
+Filename: v2ray-geoip_202306150049-1_all.ipk
+Size: 2078511
+SHA256sum: a145e315decea3cfec1cf9f013451bee12eb60971ba3a370b954f16c40255736
+Description:  GeoIP List for V2Ray
+
+Package: v2ray-geosite
+Version: 20230620033122-1
+Depends: libc
+Source: /feed/packages/v2ray-geodata
+SourceName: v2ray-geosite
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1687241951
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: all
+Installed-Size: 459010
+Filename: v2ray-geosite_20230620033122-1_all.ipk
+Size: 458422
+SHA256sum: f220d9a524972decc6b68ed6a46e6375953a26184aa36fec3c2b5fd4ffa4416e
+Description:  Geosite List for V2Ray
+
