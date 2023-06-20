@@ -1,0 +1,98 @@
+Package: clash-for-openclash
+Version: 1.16.0-1
+Depends: libc
+License: GPL-3.0-only
+Section: net
+Architecture: arm_cortex-a7
+Installed-Size: 3658532
+Filename: clash-for-openclash_1.16.0-1_arm_cortex-a7.ipk
+Size: 3653597
+SHA256sum: 3a697cf70bb8f892bdaa1467ddc13bc3be35c27307afd0a70b8ee3e6d5dba4d3
+Description:  Clash, A rule based tunnel in Go, support VMess, Shadowsocks,
+ Trojan, Snell protocol for remote connections.
+
+Package: clash-meta-for-openclash
+Version: 1.14.5-1
+Depends: libc
+License: GPL-3.0-only
+Section: net
+Architecture: arm_cortex-a7
+Installed-Size: 9185634
+Filename: clash-meta-for-openclash_1.14.5-1_arm_cortex-a7.ipk
+Size: 9169057
+SHA256sum: 61cc6889e9fa635ccb69cd4e614219124eabf8a97e3c40fdb2dd0a51526b45af
+Description:  Clash, A rule based tunnel in Go, support VMess, Shadowsocks,
+ Trojan, Snell protocol for remote connections.
+
+Package: mosdns
+Version: 5.1.3-1
+Depends: libc, ca-bundle
+Provides: mosdns-neo
+License: GPL-3.0
+Section: net
+Architecture: arm_cortex-a7
+Installed-Size: 6060290
+Filename: mosdns_5.1.3-1_arm_cortex-a7.ipk
+Size: 6051851
+SHA256sum: 066487dda691c5836e2b12beb65d4272ad915eabb987b5512ae06abbd64ff120
+Description:  A plug-in DNS forwarder/splitter
+
+Package: natmap
+Version: 20230519-2
+Depends: libc, jq, curl
+License: MIT
+Section: net
+Architecture: arm_cortex-a7
+Installed-Size: 19884
+Filename: natmap_20230519-2_arm_cortex-a7.ipk
+Size: 20637
+SHA256sum: a1bf54d7f99152ff42c80c3a7160aab76be72c178a7c5f23c255f46964b431e8
+Description:  TCP/UDP port mapping tool for full cone NAT
+
+Package: sdm
+Version: 0.0.1-1
+Depends: libc
+Section: utils
+Architecture: arm_cortex-a7
+Installed-Size: 842
+Filename: sdm_0.0.1-1_arm_cortex-a7.ipk
+Size: 1523
+SHA256sum: aae0a8e1179df12e242857edd8894e1fe641a87352d9e25191ac09618b8f88c2
+Description:  A simple daomon manager
+
+Package: v2dat
+Version: 2022-12-15-47b8ee51-1
+Depends: libc
+License: GPL-3.0
+Section: utils
+Architecture: arm_cortex-a7
+Installed-Size: 2707461
+Filename: v2dat_2022-12-15-47b8ee51-1_arm_cortex-a7.ipk
+Size: 2703068
+SHA256sum: 3a3f4c04549f52ba74665fdacb051e2d29cf415d6d5b4d997d9ea810b2406bac
+Description:  V2ray geo/ip data unpack tools
+
+Package: v2ray-geoip
+Version: 202306150049-1
+Depends: libc
+License: CC-BY-SA-4.0
+Section: net
+Architecture: all
+Installed-Size: 2299481
+Filename: v2ray-geoip_202306150049-1_all.ipk
+Size: 2078511
+SHA256sum: a145e315decea3cfec1cf9f013451bee12eb60971ba3a370b954f16c40255736
+Description:  GeoIP List for V2Ray
+
+Package: v2ray-geosite
+Version: 20230620033122-1
+Depends: libc
+License: MIT
+Section: net
+Architecture: all
+Installed-Size: 459010
+Filename: v2ray-geosite_20230620033122-1_all.ipk
+Size: 458422
+SHA256sum: f220d9a524972decc6b68ed6a46e6375953a26184aa36fec3c2b5fd4ffa4416e
+Description:  Geosite List for V2Ray
+
