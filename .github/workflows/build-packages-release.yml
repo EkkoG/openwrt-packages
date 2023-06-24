@@ -20,38 +20,38 @@ jobs:
     strategy:
       matrix:
         arch:
-          - x86_64-23.05-SNAPSHOT
+          - x86_64-23.05.0-rc1
           - x86_64-v22.03.4
           - x86_64-v21.02.5
           - x86_64-SNAPSHOT
-          - aarch64_generic-23.05-SNAPSHOT
-          - aarch64_cortex-a53-23.05-SNAPSHOT
-          - aarch64_cortex-a72-23.05-SNAPSHOT
-          - arm_arm1176jzf-s_vfp-23.05-SNAPSHOT
-          - arm_arm926ej-s-23.05-SNAPSHOT
-          - arm_cortex-a15_neon-vfpv4-23.05-SNAPSHOT
-          - arm_cortex-a5_vfpv4-23.05-SNAPSHOT
-          - arm_cortex-a7-23.05-SNAPSHOT
-          - arm_cortex-a7_neon-vfpv4-23.05-SNAPSHOT
-          - arm_cortex-a7_vfpv4-23.05-SNAPSHOT
-          - arm_cortex-a8_vfpv3-23.05-SNAPSHOT
-          - arm_cortex-a9-23.05-SNAPSHOT
-          - arm_cortex-a9_neon-23.05-SNAPSHOT
-          - arm_cortex-a9_vfpv3-d16-23.05-SNAPSHOT
-          - arm_fa526-23.05-SNAPSHOT
-          - arm_mpcore-23.05-SNAPSHOT
-          - arm_xscale-23.05-SNAPSHOT
-          - i386_pentium-mmx-23.05-SNAPSHOT
-          - i386_pentium4-23.05-SNAPSHOT
-          - mips64_octeonplus-23.05-SNAPSHOT
-          - mips_24kc-23.05-SNAPSHOT
-          - mips_4kec-23.05-SNAPSHOT
-          - mips_mips32-23.05-SNAPSHOT
-          - mipsel_24kc-23.05-SNAPSHOT
-          - mipsel_74kc-23.05-SNAPSHOT
-          - mipsel_mips32-23.05-SNAPSHOT
-          - powerpc_464fp-23.05-SNAPSHOT
-          - powerpc_8548-23.05-SNAPSHOT
+          - aarch64_generic-23.05.0-rc1
+          - aarch64_cortex-a53-23.05.0-rc1
+          - aarch64_cortex-a72-23.05.0-rc1
+          - arm_arm1176jzf-s_vfp-23.05.0-rc1
+          - arm_arm926ej-s-23.05.0-rc1
+          - arm_cortex-a15_neon-vfpv4-23.05.0-rc1
+          - arm_cortex-a5_vfpv4-23.05.0-rc1
+          - arm_cortex-a7-23.05.0-rc1
+          - arm_cortex-a7_neon-vfpv4-23.05.0-rc1
+          - arm_cortex-a7_vfpv4-23.05.0-rc1
+          - arm_cortex-a8_vfpv3-23.05.0-rc1
+          - arm_cortex-a9-23.05.0-rc1
+          - arm_cortex-a9_neon-23.05.0-rc1
+          - arm_cortex-a9_vfpv3-d16-23.05.0-rc1
+          - arm_fa526-23.05.0-rc1
+          - arm_mpcore-23.05.0-rc1
+          - arm_xscale-23.05.0-rc1
+          - i386_pentium-mmx-23.05.0-rc1
+          - i386_pentium4-23.05.0-rc1
+          - mips64_octeonplus-23.05.0-rc1
+          - mips_24kc-23.05.0-rc1
+          - mips_4kec-23.05.0-rc1
+          - mips_mips32-23.05.0-rc1
+          - mipsel_24kc-23.05.0-rc1
+          - mipsel_74kc-23.05.0-rc1
+          - mipsel_mips32-23.05.0-rc1
+          - powerpc_464fp-23.05.0-rc1
+          - powerpc_8548-23.05.0-rc1
           - aarch64_generic-v22.03.4
           - aarch64_generic-v21.02.5
           - aarch64_generic-SNAPSHOT
@@ -184,6 +184,9 @@ jobs:
           BRANCH="${ARCH::-2}"
           if [[ $ARCH =~ "SNAPSHOT" ]]; then
               BRANCH="$ARCH"
+          fi
+          if [[ $ARCH =~ "23.05" ]]; then
+              BRANCH="23.05"
           fi
           cd bin/packages/*/action
           sudo chown runner:runner -R .
