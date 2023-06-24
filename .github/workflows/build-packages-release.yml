@@ -181,12 +181,12 @@ jobs:
           ARCH: ${{ matrix.arch }}
         run: |
 
-          VERSION=$(echo $ARCH | awk -F'-' '{print $2}')
+          ARCH_NAME=$(echo "$ARCH" | awk -F'-' 'BEGIN {OFS=FS} {NF--; print}')
+          VERSION=$(echo "$ARCH" | awk -F'-' '{print $NF}')
           # remove v
           VERSION=$(echo $VERSION | awk -F'v' '{print $2}')
           # big version 23.05
           BIG_VERSION=$(echo $VERSION | awk -F'.' '{print $1"."$2}')
-          ARCH_NAME=$(echo $ARCH | awk -F'-' '{print $1}')
 
           BRANCH="$ARCH_NAME-$BIG_VERSION"
           if [[ $ARCH =~ "SNAPSHOT" ]]; then
