@@ -1,0 +1,111 @@
+Package: clash-for-openclash
+Version: 1.17.0-1
+Depends: libc
+License: GPL-3.0-only
+Section: net
+Architecture: arm_xscale
+Installed-Size: 3761737
+Filename: clash-for-openclash_1.17.0-1_arm_xscale.ipk
+Size: 3756492
+SHA256sum: 2d6297821655fcb0b99ae152941acf1080c3a8d08d2d8ebb02b9d2a42cec072d
+Description:  Clash, A rule based tunnel in Go, support VMess, Shadowsocks,
+ Trojan, Snell protocol for remote connections.
+
+Package: clash-meta-alpha-for-openclash
+Version: f796d85-1
+Depends: libc
+License: GPL-3.0-only
+Section: net
+Architecture: arm_xscale
+Installed-Size: 9241090
+Filename: clash-meta-alpha-for-openclash_f796d85-1_arm_xscale.ipk
+Size: 9225699
+SHA256sum: 2d8055417d8a4a0a0d7a51f65b1ac789dd090734e4c2676edd28a428e11d155d
+Description:  Clash, A rule based tunnel in Go, support VMess, Shadowsocks,
+ Trojan, Snell protocol for remote connections.
+
+Package: clash-meta-for-openclash
+Version: 1.15.0-1
+Depends: libc
+License: GPL-3.0-only
+Section: net
+Architecture: arm_xscale
+Installed-Size: 9226455
+Filename: clash-meta-for-openclash_1.15.0-1_arm_xscale.ipk
+Size: 9211027
+SHA256sum: 6f585701cf1e24248ae4b3093de784fe53f0e0d79788c3c4f5a05469d39b4db4
+Description:  Clash, A rule based tunnel in Go, support VMess, Shadowsocks,
+ Trojan, Snell protocol for remote connections.
+
+Package: mosdns
+Version: 5.1.3-1
+Depends: libc, ca-bundle
+Provides: mosdns-neo
+License: GPL-3.0
+Section: net
+Architecture: arm_xscale
+Installed-Size: 6060156
+Filename: mosdns_5.1.3-1_arm_xscale.ipk
+Size: 6051750
+SHA256sum: 63be7a7ac494f9aeb0d871cb5e5bffeea028f0e37de0882a13277b3044cf2722
+Description:  A plug-in DNS forwarder/splitter
+
+Package: natmap
+Version: 20230519-2
+Depends: libc, jq, curl
+License: MIT
+Section: net
+Architecture: arm_xscale
+Installed-Size: 19984
+Filename: natmap_20230519-2_arm_xscale.ipk
+Size: 20780
+SHA256sum: 5b32eb6a67d7cdfa34446eb3c653eb8a8577e85aea1bf871862567ee65e4e016
+Description:  TCP/UDP port mapping tool for full cone NAT
+
+Package: sdm
+Version: 0.0.1-1
+Depends: libc
+Section: utils
+Architecture: arm_xscale
+Installed-Size: 842
+Filename: sdm_0.0.1-1_arm_xscale.ipk
+Size: 1525
+SHA256sum: 31f01d8a2c09a85aba677e4c77f10ed7554fbea015eaa94b838e653541ab4cd7
+Description:  A simple daomon manager
+
+Package: v2dat
+Version: 2022-12-15-47b8ee51-1
+Depends: libc
+License: GPL-3.0
+Section: utils
+Architecture: arm_xscale
+Installed-Size: 2707451
+Filename: v2dat_2022-12-15-47b8ee51-1_arm_xscale.ipk
+Size: 2703041
+SHA256sum: 667f5eea34f3132a89cba945b22c92bc54297cdf9e915aff9e1635b1165e6ad2
+Description:  V2ray geo/ip data unpack tools
+
+Package: v2ray-geoip
+Version: 202306150049-1
+Depends: libc
+License: CC-BY-SA-4.0
+Section: net
+Architecture: all
+Installed-Size: 2299481
+Filename: v2ray-geoip_202306150049-1_all.ipk
+Size: 2078511
+SHA256sum: a145e315decea3cfec1cf9f013451bee12eb60971ba3a370b954f16c40255736
+Description:  GeoIP List for V2Ray
+
+Package: v2ray-geosite
+Version: 20230620033122-1
+Depends: libc
+License: MIT
+Section: net
+Architecture: all
+Installed-Size: 459010
+Filename: v2ray-geosite_20230620033122-1_all.ipk
+Size: 458422
+SHA256sum: f220d9a524972decc6b68ed6a46e6375953a26184aa36fec3c2b5fd4ffa4416e
+Description:  Geosite List for V2Ray
+
