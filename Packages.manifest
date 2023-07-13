@@ -1,0 +1,65 @@
+Package: natmap
+Version: 20230519-2
+Depends: libc, librt, libpthread, jq, curl
+Source: /feed/packages/natmap
+SourceName: natmap
+License: MIT
+LicenseFiles: License
+Section: net
+SourceDateEpoch: 1686129977
+Maintainer: Richard Yu <yurichard3839@gmail.com>
+Architecture: arc_arc700
+Installed-Size: 20534
+Filename: natmap_20230519-2_arc_arc700.ipk
+Size: 21248
+SHA256sum: e1e7c422329adc7d7bb89ae2d950ba9163954fbdfdbd3a350c704ae6ed29204e
+Description:  TCP/UDP port mapping tool for full cone NAT
+
+Package: sdm
+Version: 0.0.1-1
+Depends: libc, librt, libpthread
+Source: /feed/packages/sdm
+SourceName: sdm
+Section: utils
+SourceDateEpoch: 1682096665
+Architecture: arc_arc700
+Installed-Size: 842
+Filename: sdm_0.0.1-1_arc_arc700.ipk
+Size: 1531
+SHA256sum: 1355dbda957bfd4d0a48221bddd8cbf93ef388d736b42ed82c587813796d29eb
+Description:  A simple daomon manager
+
+Package: v2ray-geoip
+Version: 202306150049-1
+Depends: libc, librt, libpthread
+Source: /feed/packages/v2ray-geodata
+SourceName: v2ray-geoip
+License: CC-BY-SA-4.0
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1687241951
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: all
+Installed-Size: 2299481
+Filename: v2ray-geoip_202306150049-1_all.ipk
+Size: 2078515
+SHA256sum: 459226eb4c7904995166c1a7b9da8cc8ba7fb581f9c8a275dfbc8c7adeed4742
+Description:  GeoIP List for V2Ray
+
+Package: v2ray-geosite
+Version: 20230620033122-1
+Depends: libc, librt, libpthread
+Source: /feed/packages/v2ray-geodata
+SourceName: v2ray-geosite
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1687241951
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: all
+Installed-Size: 459010
+Filename: v2ray-geosite_20230620033122-1_all.ipk
+Size: 458431
+SHA256sum: bbc7344ee95ad788fa89b7c636760ed2426385b37b93d7ca4030f13ae2744bbc
+Description:  Geosite List for V2Ray
+
