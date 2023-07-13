@@ -1,0 +1,111 @@
+Package: clash-for-openclash
+Version: 1.17.0-1
+Depends: libc
+License: GPL-3.0-only
+Section: net
+Architecture: i386_pentium4
+Installed-Size: 3798361
+Filename: clash-for-openclash_1.17.0-1_i386_pentium4.ipk
+Size: 3791299
+SHA256sum: 01c927318cc19c086bab913201cdce61d19e0b9cf978e86223b8c07a2db06592
+Description:  Clash, A rule based tunnel in Go, support VMess, Shadowsocks,
+ Trojan, Snell protocol for remote connections.
+
+Package: clash-meta-alpha-for-openclash
+Version: f796d85-1
+Depends: libc
+License: GPL-3.0-only
+Section: net
+Architecture: i386_pentium4
+Installed-Size: 9376413
+Filename: clash-meta-alpha-for-openclash_f796d85-1_i386_pentium4.ipk
+Size: 9357016
+SHA256sum: 781085f2c1584429f8642a2be8a70bf16cce4e59b74decd80ec4af45c24be86a
+Description:  Clash, A rule based tunnel in Go, support VMess, Shadowsocks,
+ Trojan, Snell protocol for remote connections.
+
+Package: clash-meta-for-openclash
+Version: 1.15.0-1
+Depends: libc
+License: GPL-3.0-only
+Section: net
+Architecture: i386_pentium4
+Installed-Size: 9361528
+Filename: clash-meta-for-openclash_1.15.0-1_i386_pentium4.ipk
+Size: 9342140
+SHA256sum: bf256059ed7bb3f2e7bfc52a761e3bdb4628665b3eced5468f7ea80c380b7b59
+Description:  Clash, A rule based tunnel in Go, support VMess, Shadowsocks,
+ Trojan, Snell protocol for remote connections.
+
+Package: mosdns
+Version: 5.1.3-1
+Depends: libc, ca-bundle
+Provides: mosdns-neo
+License: GPL-3.0
+Section: net
+Architecture: i386_pentium4
+Installed-Size: 6133280
+Filename: mosdns_5.1.3-1_i386_pentium4.ipk
+Size: 6120281
+SHA256sum: 8962b259438c3530f1d3d141731c9c7625e850e4d9a42e5aa1d443165ca8482e
+Description:  A plug-in DNS forwarder/splitter
+
+Package: natmap
+Version: 20230519-2
+Depends: libc, jq, curl
+License: MIT
+Section: net
+Architecture: i386_pentium4
+Installed-Size: 20951
+Filename: natmap_20230519-2_i386_pentium4.ipk
+Size: 21767
+SHA256sum: a1fd8541aaaaa79fcd0df6ce00ace3d6ff40ce90e0ad10355e08f4fbe8b2a2b5
+Description:  TCP/UDP port mapping tool for full cone NAT
+
+Package: sdm
+Version: 0.0.1-1
+Depends: libc
+Section: utils
+Architecture: i386_pentium4
+Installed-Size: 842
+Filename: sdm_0.0.1-1_i386_pentium4.ipk
+Size: 1524
+SHA256sum: e7905b0cd3a8dcb0574f15809f2b2fbffc4142ff7e7ced97c41b7ee6c3e2b316
+Description:  A simple daomon manager
+
+Package: v2dat
+Version: 2022-12-15-47b8ee51-1
+Depends: libc
+License: GPL-3.0
+Section: utils
+Architecture: i386_pentium4
+Installed-Size: 2761509
+Filename: v2dat_2022-12-15-47b8ee51-1_i386_pentium4.ipk
+Size: 2754681
+SHA256sum: 629990b407397918fd1533daf0e4ed871494523475d8dc716d56e16e70737d5c
+Description:  V2ray geo/ip data unpack tools
+
+Package: v2ray-geoip
+Version: 202306150049-1
+Depends: libc
+License: CC-BY-SA-4.0
+Section: net
+Architecture: all
+Installed-Size: 2299481
+Filename: v2ray-geoip_202306150049-1_all.ipk
+Size: 2078511
+SHA256sum: a145e315decea3cfec1cf9f013451bee12eb60971ba3a370b954f16c40255736
+Description:  GeoIP List for V2Ray
+
+Package: v2ray-geosite
+Version: 20230620033122-1
+Depends: libc
+License: MIT
+Section: net
+Architecture: all
+Installed-Size: 459010
+Filename: v2ray-geosite_20230620033122-1_all.ipk
+Size: 458422
+SHA256sum: f220d9a524972decc6b68ed6a46e6375953a26184aa36fec3c2b5fd4ffa4416e
+Description:  Geosite List for V2Ray
+
