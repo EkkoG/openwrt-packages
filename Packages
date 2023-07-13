@@ -1,0 +1,47 @@
+Package: natmap
+Version: 20230519-2
+Depends: libc, jq, curl
+License: MIT
+Section: net
+Architecture: powerpc_464fp
+Installed-Size: 25590
+Filename: natmap_20230519-2_powerpc_464fp.ipk
+Size: 26159
+SHA256sum: 07db5b9f79087d43c7252250f02809a03f9bbbda31fd8be0eafa3f319479e760
+Description:  TCP/UDP port mapping tool for full cone NAT
+
+Package: sdm
+Version: 0.0.1-1
+Depends: libc
+Section: utils
+Architecture: powerpc_464fp
+Installed-Size: 842
+Filename: sdm_0.0.1-1_powerpc_464fp.ipk
+Size: 1521
+SHA256sum: 6033caf256cc4efe9647fc931483347f54e99d33896993b07c948a93ff41f3b5
+Description:  A simple daomon manager
+
+Package: v2ray-geoip
+Version: 202306150049-1
+Depends: libc
+License: CC-BY-SA-4.0
+Section: net
+Architecture: all
+Installed-Size: 2299481
+Filename: v2ray-geoip_202306150049-1_all.ipk
+Size: 2078511
+SHA256sum: a145e315decea3cfec1cf9f013451bee12eb60971ba3a370b954f16c40255736
+Description:  GeoIP List for V2Ray
+
+Package: v2ray-geosite
+Version: 20230620033122-1
+Depends: libc
+License: MIT
+Section: net
+Architecture: all
+Installed-Size: 459010
+Filename: v2ray-geosite_20230620033122-1_all.ipk
+Size: 458422
+SHA256sum: f220d9a524972decc6b68ed6a46e6375953a26184aa36fec3c2b5fd4ffa4416e
+Description:  Geosite List for V2Ray
+
