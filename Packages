@@ -1,0 +1,111 @@
+Package: clash-for-openclash
+Version: 1.17.0-1
+Depends: libc
+License: GPL-3.0-only
+Section: net
+Architecture: aarch64_generic
+Installed-Size: 3624102
+Filename: clash-for-openclash_1.17.0-1_aarch64_generic.ipk
+Size: 3615023
+SHA256sum: 85204b5cc92f2dfdd6d6c190771c4027c0778ae1ce809756b928a6f3e1fd66a0
+Description:  Clash, A rule based tunnel in Go, support VMess, Shadowsocks,
+ Trojan, Snell protocol for remote connections.
+
+Package: clash-meta-alpha-for-openclash
+Version: f796d85-1
+Depends: libc
+License: GPL-3.0-only
+Section: net
+Architecture: aarch64_generic
+Installed-Size: 8849985
+Filename: clash-meta-alpha-for-openclash_f796d85-1_aarch64_generic.ipk
+Size: 8820995
+SHA256sum: 5334435008edd10989028779fd7d744bea4be8ae3975798e5647b829c7a8c737
+Description:  Clash, A rule based tunnel in Go, support VMess, Shadowsocks,
+ Trojan, Snell protocol for remote connections.
+
+Package: clash-meta-for-openclash
+Version: 1.15.0-1
+Depends: libc
+License: GPL-3.0-only
+Section: net
+Architecture: aarch64_generic
+Installed-Size: 8834263
+Filename: clash-meta-for-openclash_1.15.0-1_aarch64_generic.ipk
+Size: 8804031
+SHA256sum: 2c521bec65e2863d3b54ed75f2e3272b780d6e0618b55162b5a6237aacbaacfd
+Description:  Clash, A rule based tunnel in Go, support VMess, Shadowsocks,
+ Trojan, Snell protocol for remote connections.
+
+Package: mosdns
+Version: 5.1.3-1
+Depends: libc, ca-bundle
+Provides: mosdns-neo
+License: GPL-3.0
+Section: net
+Architecture: aarch64_generic
+Installed-Size: 5799932
+Filename: mosdns_5.1.3-1_aarch64_generic.ipk
+Size: 5783027
+SHA256sum: 45f2f7c8e72dca635800cb08d9aca7997e96d9d03fe8ce7a6835e0be53fee9b9
+Description:  A plug-in DNS forwarder/splitter
+
+Package: natmap
+Version: 20230519-2
+Depends: libc, jq, curl
+License: MIT
+Section: net
+Architecture: aarch64_generic
+Installed-Size: 23762
+Filename: natmap_20230519-2_aarch64_generic.ipk
+Size: 24391
+SHA256sum: 762dd069d5a93fde9185cb85da217eade634b63ff6aa98ea5f212dddc398f141
+Description:  TCP/UDP port mapping tool for full cone NAT
+
+Package: sdm
+Version: 0.0.1-1
+Depends: libc
+Section: utils
+Architecture: aarch64_generic
+Installed-Size: 842
+Filename: sdm_0.0.1-1_aarch64_generic.ipk
+Size: 1523
+SHA256sum: c3c05efdc761cf6699d8ff2a0bfe489ac2f2cec4de553c1cd47f90d0383ec032
+Description:  A simple daomon manager
+
+Package: v2dat
+Version: 2022-12-15-47b8ee51-1
+Depends: libc
+License: GPL-3.0
+Section: utils
+Architecture: aarch64_generic
+Installed-Size: 2608338
+Filename: v2dat_2022-12-15-47b8ee51-1_aarch64_generic.ipk
+Size: 2600958
+SHA256sum: 6930a83694f43488689bcd9355c55e9dfd721c1f589a3fe709f8fe35da240835
+Description:  V2ray geo/ip data unpack tools
+
+Package: v2ray-geoip
+Version: 202306150049-1
+Depends: libc
+License: CC-BY-SA-4.0
+Section: net
+Architecture: all
+Installed-Size: 2299481
+Filename: v2ray-geoip_202306150049-1_all.ipk
+Size: 2078511
+SHA256sum: a145e315decea3cfec1cf9f013451bee12eb60971ba3a370b954f16c40255736
+Description:  GeoIP List for V2Ray
+
+Package: v2ray-geosite
+Version: 20230620033122-1
+Depends: libc
+License: MIT
+Section: net
+Architecture: all
+Installed-Size: 459010
+Filename: v2ray-geosite_20230620033122-1_all.ipk
+Size: 458422
+SHA256sum: f220d9a524972decc6b68ed6a46e6375953a26184aa36fec3c2b5fd4ffa4416e
+Description:  Geosite List for V2Ray
+
