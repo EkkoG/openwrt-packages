@@ -1,0 +1,111 @@
+Package: clash-for-openclash
+Version: 1.17.0-1
+Depends: libc
+License: GPL-3.0-only
+Section: net
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 3748005
+Filename: clash-for-openclash_1.17.0-1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 3743287
+SHA256sum: fba77d1762410f8df1a926a71b077c319f29fdb2e4b7cfe713e0ff809500231c
+Description:  Clash, A rule based tunnel in Go, support VMess, Shadowsocks,
+ Trojan, Snell protocol for remote connections.
+
+Package: clash-meta-alpha-for-openclash
+Version: f796d85-1
+Depends: libc
+License: GPL-3.0-only
+Section: net
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 9216194
+Filename: clash-meta-alpha-for-openclash_f796d85-1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 9201300
+SHA256sum: c3a98e57109f442fd4f6698e9189d342cdb7de04aeb5d207e899a60d65a6b539
+Description:  Clash, A rule based tunnel in Go, support VMess, Shadowsocks,
+ Trojan, Snell protocol for remote connections.
+
+Package: clash-meta-for-openclash
+Version: 1.15.0-1
+Depends: libc
+License: GPL-3.0-only
+Section: net
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 9200203
+Filename: clash-meta-for-openclash_1.15.0-1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 9185291
+SHA256sum: 14c26ecf85aa523f2574adaed63da2bb37f53ee7e51c39e0a3bb6c7e412816f3
+Description:  Clash, A rule based tunnel in Go, support VMess, Shadowsocks,
+ Trojan, Snell protocol for remote connections.
+
+Package: mosdns
+Version: 5.1.3-1
+Depends: libc, ca-bundle
+Provides: mosdns-neo
+License: GPL-3.0
+Section: net
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 6045451
+Filename: mosdns_5.1.3-1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 6036282
+SHA256sum: 5b1ced442aff2aada4bdcfd34b767ea15817b6bbbc668c512f1ff0d371439a91
+Description:  A plug-in DNS forwarder/splitter
+
+Package: natmap
+Version: 20230519-2
+Depends: libc, jq, curl
+License: MIT
+Section: net
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 19903
+Filename: natmap_20230519-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 20652
+SHA256sum: 78232feef7a8c7f0a44aebe58313c97f3e0fbda59f7262795fe83263a269ae9b
+Description:  TCP/UDP port mapping tool for full cone NAT
+
+Package: sdm
+Version: 0.0.1-1
+Depends: libc
+Section: utils
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 842
+Filename: sdm_0.0.1-1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 1529
+SHA256sum: 994cc62156114da1bd15b86aaabf4d26df2a7c9980ec070736c95106b385ad2b
+Description:  A simple daomon manager
+
+Package: v2dat
+Version: 2022-12-15-47b8ee51-1
+Depends: libc
+License: GPL-3.0
+Section: utils
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 2697969
+Filename: v2dat_2022-12-15-47b8ee51-1_arm_cortex-a9_vfpv3-d16.ipk
+Size: 2693374
+SHA256sum: 1c3cfb1997c1b2741de761fbfadbb84ee9b51e9d10336cd788b94da79adfae13
+Description:  V2ray geo/ip data unpack tools
+
+Package: v2ray-geoip
+Version: 202306150049-1
+Depends: libc
+License: CC-BY-SA-4.0
+Section: net
+Architecture: all
+Installed-Size: 2299481
+Filename: v2ray-geoip_202306150049-1_all.ipk
+Size: 2078511
+SHA256sum: a145e315decea3cfec1cf9f013451bee12eb60971ba3a370b954f16c40255736
+Description:  GeoIP List for V2Ray
+
+Package: v2ray-geosite
+Version: 20230620033122-1
+Depends: libc
+License: MIT
+Section: net
+Architecture: all
+Installed-Size: 459010
+Filename: v2ray-geosite_20230620033122-1_all.ipk
+Size: 458422
+SHA256sum: f220d9a524972decc6b68ed6a46e6375953a26184aa36fec3c2b5fd4ffa4416e
+Description:  Geosite List for V2Ray
+
