@@ -1,12 +1,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=clash-for-openclash
-PKG_VERSION:=1.17.0
+PKG_VERSION:=1.18.0
 PKG_RELEASE:=1
 
 PKG_SOURCE:=clash-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://codeload.github.com/Dreamacro/clash/tar.gz/v$(PKG_VERSION)?
-PKG_HASH:=cd30a27f801652151eea129e9cb00e4a3ee28d45982dad835f4546691796d9d7
+PKG_HASH:=139794f50d3d94f438bab31a993cf25d7cbdf8ca8e034f3071e0dd0014069692
 
 PKG_MAINTAINER:=EkkoG <beijiu572@gmail.om>
 PKG_LICENSE:=GPL-3.0-only
