@@ -6,7 +6,7 @@ PKG_RELEASE:=1
 
 PKG_SOURCE:=clash-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://codeload.github.com/Dreamacro/clash/tar.gz/v$(PKG_VERSION)?
-PKG_HASH:=139794f50d3d94f438bab31a993cf25d7cbdf8ca8e034f3071e0dd0014069692
+PKG_HASH:=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 
 PKG_MAINTAINER:=EkkoG <beijiu572@gmail.om>
 PKG_LICENSE:=GPL-3.0-only
