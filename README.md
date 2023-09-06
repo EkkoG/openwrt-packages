@@ -9,3 +9,7 @@ Supported ARCH please see https://sourceforge.net/projects/ekko-openwrt-dist/fil
 ```
 echo "src/gz ekkog_clash https://master.dl.sourceforge.net/project/ekko-openwrt-dist/other/$ARCH/" | tee -a "/etc/opkg/customfeeds.conf"
 ```
+
+Then install the signature key, please see
+
+https://github.com/EkkoG/openwrt-dist#install-sign-key
