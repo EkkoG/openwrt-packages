@@ -63,25 +63,12 @@ jobs:
         run: |
           ls -R bin/
 
-      - name: Upload
+      - name: Upload feed
+        uses: Pendect/action-rsyncer@8e05ffa5c93e5d9c9b167796b26044d2c616b2b9
+        with:
+          flags: '-ahvHP'
+          options: '--delete'
+          src: 'bin/packages/*/action/'
+          dest: '${{ secrets.SF_USER }}@frs.sourceforge.net:/home/frs/project/ekko-openwrt-dist/other/${{ matrix.arch }}/'
         env:
-          ARCH: ${{ matrix.arch }}
-        run: |
-
-          ARCH_NAME=$(echo "$ARCH" | awk -F'-v2' '{print $1}')
-          VERSION=$(echo "$ARCH" | awk -F'-v2' '{print $2}')
-          # big version 23.05
-          BIG_VERSION=$(echo $VERSION | awk -F'.' '{print $1"."$2}')
-
-          BRANCH="$ARCH_NAME-2$BIG_VERSION"
-          if [[ $ARCH =~ "SNAPSHOT" ]]; then
-              BRANCH="$ARCH"
-          fi
-          cd bin/packages/*/action
-          sudo chown runner:runner -R .
-          git init
-          git config user.name "bot"
-          git config user.email "bot@github.com"
-          git add .
-          git commit -m "$(TZ='Asia/Shanghai' date +@%Y%m%d)"
-          git push --force --quiet "https://x-access-token:${{ secrets.PUSH_TOKEN }}@github.com/$GITHUB_REPOSITORY" HEAD:$BRANCH
+          DEPLOY_KEY: ${{ secrets.SF_KEY }}
