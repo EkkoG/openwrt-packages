@@ -1,5 +1,10 @@
 https://github.com/EkkoG/openwrt-packages
 
+## Install with scripts
+
+```
+sh -c "$(curl https://raw.fgit.cf/EkkoG/openwrt-dist/master/add-feed.sh)" -- packages
+
 ## Usage
 
 Add this line to your /etc/opkg/customfeeds.conf
