@@ -4,6 +4,7 @@ https://github.com/EkkoG/openwrt-packages
 
 ```
 sh -c "$(curl https://raw.fgit.cf/EkkoG/openwrt-dist/master/add-feed.sh)" -- packages
+```
 
 ## Usage
 
