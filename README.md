@@ -8,9 +8,9 @@ sh -c "$(curl https://raw.fgit.cf/EkkoG/openwrt-dist/master/add-feed.sh)" -- pac
 
 ## Usage
 
-Add this line to your /etc/opkg/customfeeds.conf
+Supported ARCH please see https://sourceforge.net/projects/ekko-openwrt-dist/files/packages/ and replace $ARCH with the one you need.
 
-Supported ARCH please see https://sourceforge.net/projects/ekko-openwrt-dist/files/packages/
+Run command to add feed
 
 ```
 echo "src/gz ekkog_packages https://ghproxy.imciel.com/https://downloads.sourceforge.net/project/ekko-openwrt-dist/packages/$ARCH" | tee -a "/etc/opkg/customfeeds.conf"
