@@ -1,5 +1,9 @@
 name: Upstream Packages Version Check
 on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "The tag version you want to build"
   push:
     branches: main
     paths:
