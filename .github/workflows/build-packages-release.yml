@@ -29,6 +29,8 @@ jobs:
           - aarch64_generic-v22.03.5
           - aarch64_generic-v21.02.7
           - aarch64_generic-SNAPSHOT
+          - mipsel_24kc-v23.05.2
+          - mipsel_24kc-v22.03.5
 
     steps:
       - uses: actions/checkout@v3
