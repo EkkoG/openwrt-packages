@@ -43,6 +43,7 @@ jobs:
           echo "PACKAGES=${PACKAGES}" >> $GITHUB_ENV
           find . -name "Makefile" -type f -exec cat {} \;
           final_arch=$(echo ${{ matrix.arch }} | cut -d '-' -f 1)
+          echo "final_arch=${final_arch}" >> $GITHUB_ENV
 
       - name: Build
         uses: ekkog/gh-action-sdk@master
